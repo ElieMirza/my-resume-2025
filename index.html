@@ -6,157 +6,242 @@
     <title>Elie Mirza - Salesforce Consultant</title>
     <link href="./styles/output.css" rel="stylesheet">
 </head>
-<body class="bg-white text-gray-900">
-    <header class="bg-gray-800 text-white p-4">
-        <h1 class="text-3xl font-bold">Elie Mirza</h1>
-        <p class="text-xl">Salesforce Consultant | AI & Automation Specialist | CRM Transformation Expert</p>
-        <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded">Download Resume</button>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800 dark:text-white">Elie Mirza</div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition duration-300">About</a>
+                <a href="#resume" class="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition duration-300">Resume</a>
+                <a href="#projects" class="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition duration-300">Projects</a>
+                <a href="#contact" class="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition duration-300">Contact</a>
+            </nav>
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="assets/Elie_Mirza_Resume.pdf" download="Elie_Mirza_Resume.pdf" class="bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-600 transition duration-300">Download Resume</a>
+                <button id="theme-toggle" class="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400">
+                    <svg id="theme-toggle-dark-icon" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                    <svg id="theme-toggle-light-icon" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm-.707 10.607a1 1 0 011.414 0l.707-.707a1 1 0 11-1.414-1.414l-.707.707.001.001zM3 11a1 1 0 100-2H2a1 1 0 100 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                </button>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-800 dark:text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-4 6h16"></path></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400">About</a>
+            <a href="#resume" class="block py-2 text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400">Resume</a>
+            <a href="#projects" class="block py-2 text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400">Projects</a>
+            <a href="#contact" class="block py-2 text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400">Contact</a>
+            <a href="assets/Elie_Mirza_Resume.pdf" download="Elie_Mirza_Resume.pdf" class="block mt-4 bg-blue-500 text-white py-2 px-4 rounded-full text-center">Download Resume</a>
+        </div>
     </header>
-    <main>
+
+    <!-- Hero Section -->
+    <section id="hero" class="bg-blue-500 dark:bg-blue-700 text-white text-center py-20">
+        <div class="container mx-auto px-6">
+            <h1 class="text-5xl font-bold mb-2">Elie Mirza</h1>
+            <p class="text-2xl">Salesforce Consultant | AI & Automation Specialist | CRM Transformation Expert</p>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-6 py-8">
         <!-- About Me Section -->
-        <section id="about" class="p-8">
-            <h2 class="text-2xl font-bold mb-4">About Me</h2>
-            <p class="text-lg">4x Certified Salesforce Consultant & Developer with 4+ years of experience delivering enterprise‑scale CRM
-                and AI automations for construction, trading, and technology clients across the GCC and Europe. Adept at
-                leading distributed Agile teams, designing end‑to‑end Sales, Service & Experience Cloud solutions, and
-                integrating third‑party systems via REST/SOAP, webhooks, and DevOps pipelines. Proven record of cutting
-                lead processing times by 60%, boosting data accuracy by 35%, and mentoring developers toward delivery
-                excellence. Currently spearheading digital transformation projects at Softsales Consulting; actively pursuing
-                Platform Developer II certification.</p>
+        <section id="about" class="mb-16 scroll-mt-20">
+            <h2 class="text-4xl font-bold text-center mb-8">About Me</h2>
+            <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
+                <p class="text-lg leading-relaxed">4x Certified Salesforce Consultant & Developer with 4+ years of experience delivering enterprise‑scale CRM and AI automations for construction, trading, and technology clients across the GCC and Europe. Adept at leading distributed Agile teams, designing end‑to‑end Sales, Service & Experience Cloud solutions, and integrating third‑party systems via REST/SOAP, webhooks, and DevOps pipelines. Proven record of cutting lead processing times by 60%, boosting data accuracy by 35%, and mentoring developers toward delivery excellence. Currently spearheading digital transformation projects at Softsales Consulting; actively pursuing Platform Developer II certification.</p>
+            </div>
         </section>
+
         <!-- Resume Section -->
-        <section id="resume" class="p-8">
-            <h2 class="text-2xl font-bold mb-4">Resume</h2>
-            <div class="mb-4">
-                <h3 class="text-xl font-semibold">Core Competencies</h3>
-                <ul class="list-disc pl-5">
-                    <li>CRM Transformation</li>
-                    <li>AI & Automation</li>
-                    <li>Full-Stack Development</li>
-                    <li>Salesforce Clouds: Sales, Service, Experience (Community), Marketing</li>
-                    <li>Development: Apex, Triggers, Lightning Web Components, SOQL/SOSL, Visualforce</li>
-                    <li>DevOps & CI/CD: Salesforce CLI (sf), Git, GitHub Actions, Copado, SFDX</li>
-                    <li>Integration & APIs: REST/SOAP Web Services, MuleSoft, OpenAI, Dialogflow CX</li>
-                    <li>AI & Automation: Flow Orchestrator, Einstein Bots, GPT‑based Assistants</li>
-                    <li>Tools: VS Code, Trello, Slack, Postman, GitHub, Data Loader</li>
-                    <li>Methodologies: Scrum/Agile, Test‑Driven Development, Solution Architecture, Stakeholder Management</li>
-                </ul>
-            </div>
-            <div class="mb-4">
-                <h3 class="text-xl font-semibold">Certifications</h3>
-                <ul class="list-disc pl-5">
-                    <li>Salesforce Certified AI Associate (2025)</li>
-                    <li>Microsoft Foundational C# (2024)</li>
-                    <li>Sage CRM 100 - SQL Deployment (2024)</li>
-                    <li>Sage CRM 100 - Development (2024)</li>
-                    <li>Salesforce Certified Marketing Cloud Administrator (2023)</li>
-                    <li>Salesforce Certified Platform Developer I (2022)</li>
-                    <li>Salesforce Certified Administrator (2022)</li>
-                    <li>Salesforce Platform Developer II – in progress (expected Q3 2025)</li>
-                </ul>
-            </div>
-            <div class="mb-4">
-                <h3 class="text-xl font-semibold">Professional Experience</h3>
-                <h4 class="text-lg font-semibold mt-4">Senior Salesforce Admin/Developer – WT Burden, Qatar</h4>
-                <p>Sep 2024 – Present</p>
-                <ul class="list-disc pl-5">
-                    <li>Implemented and customized Sales Cloud and Service Cloud solutions tailored to the construction and trading industry, improving opportunity tracking and customer case resolution by 35%.</li>
-                    <li>Maintaining over 289,000 characters of custom Apex code across classes and triggers, contributing to a scalable backend supporting advanced quoting, automation, and data validation logic.</li>
-                    <li>Developed automated flows and validation rules to reduce manual entry errors and enforce business rules, leading to 30% increase in data accuracy.</li>
-                    <li>Built custom Apex triggers and LWC components to enhance user experience and handle edge-case scenarios across multiple objects.</li>
-                    <li>Introduced Git-based version control with Salesforce CLI, streamlining deployment and metadata management across sandboxes and production.</li>
-                    <li>Migrated 500 k legacy records with <0.5% error using Data Loader batches and validation scripts.</li>
-                </ul>
-                <h4 class="text-lg font-semibold mt-4">Technical Functional Consultant / Team Lead – Softsales Consulting, Paris (Remote)</h4>
-                <p>Feb 2024 – Sep 2024</p>
-                <ul class="list-disc pl-5">
-                    <li>Lead a remote squad of six developers delivering multi‑cloud Salesforce solutions for European retail & fintech clients; achieved 97% sprint predictability across 12+ releases.</li>
-                    <li>Architected and implemented Sales & Service Cloud rollout handling 500 k accounts and 2 M transactions; cut case resolution time by 45% using LWC consoles and Flow orchestrations.</li>
-                    <li>Established Git‑based DevOps pipeline (sf + GitHub Actions) reducing deployment time by 70% and eliminating manual errors.</li>
-                    <li>Mentored juniors on Apex best practices, secure coding, and automated testing; unit‑test coverage consistently ≥ 85%.</li>
-                    <li>Advised C‑level stakeholders on roadmap and license optimization, saving €120 k annually.</li>
-                </ul>
-                <h4 class="text-lg font-semibold mt-4">Salesforce Consultant / Developer – OOB Consulting, Lebanon</h4>
-                <p>Jan 2021 – Feb 2024</p>
-                <ul class="list-disc pl-5">
-                    <li>Delivered 10+ end‑to‑end Salesforce implementations across construction, media, and logistics verticals.</li>
-                    <li>Developed 500+ Apex classes & 60+ LWCs to automate quote‑to‑cash, reducing manual data entry by 40%.</li>
-                    <li>Integrated WhatsApp, Outlook, and Gmail via REST & webhooks, boosting user adoption to 92%.</li>
-                    <li>Migrated 900 k legacy records with <0.5% error using Data Loader batches and validation scripts.</li>
-                    <li>Facilitated UAT workshops, translating feedback into actionable user stories; client CSAT averaged 4.8/5.</li>
-                </ul>
-            </div>
-            <div class="mb-4">
-                <h3 class="text-xl font-semibold">Education</h3>
-                <ul class="list-disc pl-5">
-                    <li>SE Factory – Full-Stack Web Development Bootcamp (2021) Intensive coding bootcamp covering HTML, CSS, JS, Node.js, version control, and agile practices.</li>
-                    <li>SE Factory – Computer Science (2021) Intensive course covering programming, algorithms, data structures, computer architecture, operating systems, and more.</li>
-                    <li>WorldQuant University – Applied Data Science with Python (Honors, 2021) Focus on scientific computing, Python, and data modeling.</li>
-                    <li>Lebanese University – Technical Degree in Architecture & Topography (BT & TS, 2007–2013) Specialized technical education in civil design, surveying, and land modeling.</li>
-                </ul>
-
+        <section id="resume" class="mb-16 scroll-mt-20">
+            <h2 class="text-4xl font-bold text-center mb-8">Resume</h2>
+            <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4">Core Competencies</h3>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>CRM Transformation</li>
+                            <li>AI & Automation</li>
+                            <li>Full-Stack Development</li>
+                            <li>Salesforce Clouds: Sales, Service, Experience (Community), Marketing</li>
+                            <li>Development: Apex, Triggers, Lightning Web Components, SOQL/SOSL, Visualforce</li>
+                            <li>DevOps & CI/CD: Salesforce CLI (sf), Git, GitHub Actions, Copado, SFDX</li>
+                            <li>Integration & APIs: REST/SOAP Web Services, MuleSoft, OpenAI, Dialogflow CX</li>
+                            <li>AI & Automation: Flow Orchestrator, Einstein Bots, GPT‑based Assistants</li>
+                            <li>Tools: VS Code, Trello, Slack, Postman, GitHub, Data Loader</li>
+                            <li>Methodologies: Scrum/Agile, Test‑Driven Development, Solution Architecture, Stakeholder Management</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4">Certifications</h3>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Salesforce Certified AI Associate (2025)</li>
+                            <li>Microsoft Foundational C# (2024)</li>
+                            <li>Sage CRM 100 - SQL Deployment (2024)</li>
+                            <li>Sage CRM 100 - Development (2024)</li>
+                            <li>Salesforce Certified Marketing Cloud Administrator (2023)</li>
+                            <li>Salesforce Certified Platform Developer I (2022)</li>
+                            <li>Salesforce Certified Administrator (2022)</li>
+                            <li>Salesforce Platform Developer II – in progress (expected Q3 2025)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <h3 class="text-2xl font-semibold mb-4">Professional Experience</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-xl font-semibold">Senior Salesforce Admin/Developer – WT Burden, Qatar</h4>
+                            <p class="text-gray-500">Sep 2024 – Present</p>
+                            <ul class="list-disc pl-5 mt-2 space-y-1">
+                                <li>Implemented and customized Sales Cloud and Service Cloud solutions tailored to the construction and trading industry, improving opportunity tracking and customer case resolution by 35%.</li>
+                                <li>Maintaining over 289,000 characters of custom Apex code across classes and triggers, contributing to a scalable backend supporting advanced quoting, automation, and data validation logic.</li>
+                                <li>Developed automated flows and validation rules to reduce manual entry errors and enforce business rules, leading to 30% increase in data accuracy.</li>
+                                <li>Built custom Apex triggers and LWC components to enhance user experience and handle edge-case scenarios across multiple objects.</li>
+                                <li>Introduced Git-based version control with Salesforce CLI, streamlining deployment and metadata management across sandboxes and production.</li>
+                                <li>Migrated 500 k legacy records with <0.5% error using Data Loader batches and validation scripts.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold">Technical Functional Consultant / Team Lead – Softsales Consulting, Paris (Remote)</h4>
+                            <p class="text-gray-500">Feb 2024 – Sep 2024</p>
+                            <ul class="list-disc pl-5 mt-2 space-y-1">
+                                <li>Lead a remote squad of six developers delivering multi‑cloud Salesforce solutions for European retail & fintech clients; achieved 97% sprint predictability across 12+ releases.</li>
+                                <li>Architected and implemented Sales & Service Cloud rollout handling 500 k accounts and 2 M transactions; cut case resolution time by 45% using LWC consoles and Flow orchestrations.</li>
+                                <li>Established Git‑based DevOps pipeline (sf + GitHub Actions) reducing deployment time by 70% and eliminating manual errors.</li>
+                                <li>Mentored juniors on Apex best practices, secure coding, and automated testing; unit‑test coverage consistently ≥ 85%.</li>
+                                <li>Advised C‑level stakeholders on roadmap and license optimization, saving €120 k annually.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold">Salesforce Consultant / Developer – OOB Consulting, Lebanon</h4>
+                            <p class="text-gray-500">Jan 2021 – Feb 2024</p>
+                            <ul class="list-disc pl-5 mt-2 space-y-1">
+                                <li>Delivered 10+ end‑to‑end Salesforce implementations across construction, media, and logistics verticals.</li>
+                                <li>Developed 500+ Apex classes & 60+ LWCs to automate quote‑to‑cash, reducing manual data entry by 40%.</li>
+                                <li>Integrated WhatsApp, Outlook, and Gmail via REST & webhooks, boosting user adoption to 92%.</li>
+                                <li>Migrated 900 k legacy records with <0.5% error using Data Loader batches and validation scripts.</li>
+                                <li>Facilitated UAT workshops, translating feedback into actionable user stories; client CSAT averaged 4.8/5.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <h3 class="text-2xl font-semibold mb-4">Education</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>SE Factory – Full-Stack Web Development Bootcamp (2021) Intensive coding bootcamp covering HTML, CSS, JS, Node.js, version control, and agile practices.</li>
+                        <li>SE Factory – Computer Science (2021) Intensive course covering programming, algorithms, data structures, computer architecture, operating systems, and more.</li>
+                        <li>WorldQuant University – Applied Data Science with Python (Honors, 2021) Focus on scientific computing, Python, and data modeling.</li>
+                        <li>Lebanese University – Technical Degree in Architecture & Topography (BT & TS, 2007–2013) Specialized technical education in civil design, surveying, and land modeling.</li>
+                    </ul>
+                </div>
             </div>
         </section>
+
         <!-- Projects Section -->
-        <section id="projects" class="p-8">
-            <h2 class="text-2xl font-bold mb-4">Projects</h2>
-            <div class="mb-4">
-                <h3 class="text-xl font-semibold">AI Lead Qualification Bot</h3>
-                <h5 class="text-base font-semibold">Agentforce</h5>
-                <p>Built Einstein/Agentforce‑powered bot handling 80% of inbound inquiries, driving 30% increase in qualified leads.</p>
-            </div>
-            <div class="mb-4">
-                <h3 class="text-xl font-semibold">Product Discovery Chatbot</h3>
-                <h5 class="text-base font-semibold">Flask + RAG + OpenAI API</h5>
-                <p>Built a Flask-based chatbot application with Retrieval‑Augmented Generation (RAG) capabilities for product and technical support. Tailored to assist designers in selecting suitable products and services from the WT Burden catalogue, it also provides installation guidance, regional regulations, and municipality compliance information.</p>
-            </div>
-            <div class="mb-4">
-                <h3 class="text-xl font-semibold">Metadata Deployment Modernization</h3>
-                <h5 class="text-base font-semibold">Salesforce CLI (sf)</h5>
-                <p>Transitioned from Ant Migration Tool to the modern sf CLI for metadata deployment, improving reliability and aligning with Salesforce's 2024 tooling standards. Managed org-to-org metadata moves across multiple environments using Git and version control best practices.</p>
+        <section id="projects" class="mb-16 scroll-mt-20">
+            <h2 class="text-4xl font-bold text-center mb-8">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold mb-2">AI Lead Qualification Bot</h3>
+                    <h5 class="text-base font-semibold text-gray-500 dark:text-gray-400 mb-2">Agentforce</h5>
+                    <p>Built Einstein/Agentforce‑powered bot handling 80% of inbound inquiries, driving 30% increase in qualified leads.</p>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold mb-2">Product Discovery Chatbot</h3>
+                    <h5 class="text-base font-semibold text-gray-500 dark:text-gray-400 mb-2">Flask + RAG + OpenAI API</h5>
+                    <p>Built a Flask-based chatbot application with Retrieval‑Augmented Generation (RAG) capabilities for product and technical support. Tailored to assist designers in selecting suitable products and services from the WT Burden catalogue, it also provides installation guidance, regional regulations, and municipality compliance information.</p>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold mb-2">Metadata Deployment Modernization</h3>
+                    <h5 class="text-base font-semibold text-gray-500 dark:text-gray-400 mb-2">Salesforce CLI (sf)</h5>
+                    <p>Transitioned from Ant Migration Tool to the modern sf CLI for metadata deployment, improving reliability and aligning with Salesforce's 2024 tooling standards. Managed org-to-org metadata moves across multiple environments using Git and version control best practices.</p>
+                </div>
             </div>
         </section>
 
-        <section id="languages-soft-skills" class="p-8">
-            <h2 class="text-2xl font-bold mb-4">Languages & Soft Skills</h2>
-            <h3 class="text-xl font-semibold">Languages</h3>
-            <ul class="list-disc pl-5">
-                <li>Arabic (Native)</li>
-                <li>English (Fluent)</li>
-                <li>French (Conversational)</li>
-            </ul>
-            <h3 class="text-xl font-semibold mt-4">Soft Skills</h3>
-            <ul class="list-disc pl-5">
-                <li>Leadership</li>
-                <li>Critical Thinking</li>
-                <li>Client‑Facing Communication</li>
-                <li>Team Collaboration</li>
-                <li>Agile Coaching</li>
-            </ul>
+        <!-- Languages & Soft Skills Section -->
+        <section id="languages-soft-skills" class="mb-16 scroll-mt-20">
+            <h2 class="text-4xl font-bold text-center mb-8">Languages & Soft Skills</h2>
+            <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4">Languages</h3>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Arabic (Native)</li>
+                            <li>English (Fluent)</li>
+                            <li>French (Conversational)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4">Soft Skills</h3>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Leadership</li>
+                            <li>Critical Thinking</li>
+                            <li>Client‑Facing Communication</li>
+                            <li>Team Collaboration</li>
+                            <li>Agile Coaching</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
+
         <!-- Contact Section -->
-        <section id="contact" class="p-8">
-            <h2 class="text-2xl font-bold mb-4">Contact</h2>
-            <form class="space-y-4">
-                <div>
-                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-                    <input type="text" id="name" name="name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required>
-                </div>
-                <div>
-                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                    <input type="email" id="email" name="email" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required>
-                </div>
-                <div>
-                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required></textarea>
-                </div>
-                <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded">Send Message</button>
-            </form>
+        <section id="contact" class="scroll-mt-20">
+            <h2 class="text-4xl font-bold text-center mb-8">Contact</h2>
+            <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md max-w-lg mx-auto">
+                <form id="contact-form" action="https://formspree.io/f/mwpbyynk" method="POST" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Name</label>
+                        <input type="text" id="name" name="name" class="mt-1 block w-full border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
+                        <input type="email" id="email" name="email" class="mt-1 block w-full border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Message</label>
+                        <textarea id="message" name="message" rows="4" class="mt-1 block w-full border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-600 transition duration-300">Send Message</button>
+                </form>
+                <div id="form-status" class="mt-4 text-center"></div>
+            </div>
         </section>
     </main>
-    <footer class="bg-gray-800 text-white p-4 text-center">
-        <p>&copy; 2025 Elie Mirza</p>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 dark:bg-black text-white py-8 mt-16">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.378.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.308.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.003 10.003 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                </a>
+            </div>
+            <p>&copy; 2025 Elie Mirza. All rights reserved.</p>
+        </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="hidden fixed bottom-8 right-8 bg-blue-500 text-white w-12 h-12 rounded-full shadow-lg hover:bg-blue-600 transition-transform duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+        <svg class="w-6 h-6 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+        </svg>
+    </button>
+
     <script src="./scripts/main.js"></script>
 </body>
 </html> 
